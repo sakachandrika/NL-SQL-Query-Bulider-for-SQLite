@@ -9,7 +9,7 @@ Ask questions in plain English, get working SQL and live results back instantly.
 | 2 | HIBA | MCA | 252T61F100 | hiba.heera@gmail.com |
 | 3 | REDDY ARCHANA | MCA | 252T61F099 | archanareddy3579@gmail.com |
 
-
+---
 Demo video link : https://drive.google.com/file/d/1oG8d9hmKJGrYJdjvVz4KFRQkl9nHilae/view?usp=sharing
 
 ## 📦 Project Structure
