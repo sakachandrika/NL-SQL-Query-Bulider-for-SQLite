@@ -1,5 +1,6 @@
 # 🔍 NL → SQL Query Builder
 **SQL-01 | AI Implementation Protocol — Student Project**
+Ask questions in plain English, get working SQL and live results back instantly.
 ## Team Members
 
 | S.No | Name | Branch | Roll Number | Email ID |
@@ -9,9 +10,6 @@
 | 3 | REDDY ARCHANA | MCA | 252T61F099 | archanareddy3579@gmail.com |
 
 
-Ask questions in plain English, get working SQL and live results back instantly.
-
----
 Demo video link : https://drive.google.com/file/d/1oG8d9hmKJGrYJdjvVz4KFRQkl9nHilae/view?usp=sharing
 
 ## 📦 Project Structure
