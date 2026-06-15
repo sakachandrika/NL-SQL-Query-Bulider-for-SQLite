@@ -6,7 +6,7 @@ Ask questions in plain English, get working SQL and live results back instantly.
 | S.No | Name | Branch | Roll Number | Email ID |
 |------|------|--------|------------|----------|
 | 1 | SAKA CHANDRIKA | MCA | 252T61F104 | sakachandrika2002@gmail.com |
-| 2 | HIBA | MCA | 252T61F100 | hiba.heera@gmail.com |
+| 2 | S HIBA MUHAMMADI | MCA | 252T61F100 | hiba.heera@gmail.com |
 | 3 | REDDY ARCHANA | MCA | 252T61F099 | archanareddy3579@gmail.com |
 
 ---
