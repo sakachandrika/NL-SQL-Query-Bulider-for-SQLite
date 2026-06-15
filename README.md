@@ -77,6 +77,20 @@ The app auto-creates `sales.db` on first launch.
 | **Query history** | Per-session history with re-run capability |
 
 ---
+Architecture Overview:
+
+User
+The user enters a question in natural language.
+Streamlit UI
+Streamlit provides the web interface where users interact with the system.
+AI Model (Gemini/Ollama)
+The AI model understands the user's question and converts it into an SQL query.
+SQL Generation
+A valid SQL query is generated based on the database schema.
+SQLite Database
+The generated query is executed on the SQLite database to retrieve data.
+Pandas and Output Display
+Pandas processes the query results and Streamlit displays the SQL query, retrieved data, and explanation to the user.
 
 ## 🛡️ Safety Architecture
 
