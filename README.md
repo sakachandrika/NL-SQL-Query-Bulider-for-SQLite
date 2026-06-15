@@ -4,6 +4,7 @@
 Ask questions in plain English, get working SQL and live results back instantly.
 
 ---
+Demo video link : https://drive.google.com/file/d/1oG8d9hmKJGrYJdjvVz4KFRQkl9nHilae/view?usp=sharing
 
 ## 📦 Project Structure
 
