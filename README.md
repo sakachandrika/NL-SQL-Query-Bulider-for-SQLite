@@ -47,6 +47,7 @@ order_items (item_id, order_id, product_id, quantity, unit_price, subtotal)
 
 ---
 
+
 ## 🚀 Quick Start
 
 ### 1. Install dependencies
@@ -150,6 +151,39 @@ Results as DataFrame
 ```
 
 ---
+## AI Usage Note
+
+This project leverages Artificial Intelligence (AI) to simplify database interactions by converting natural language queries into SQL statements. An AI model (Gemini AI/Ollama) is integrated into the application to understand user questions written in plain English and generate the corresponding SQL query automatically.
+
+The AI model is provided with the database schema, including table names and column details, before query generation. This process, known as schema grounding, helps the model understand the database structure and generate accurate SQL queries. By using schema grounding, the system minimizes errors and ensures that the generated queries reference only valid tables and columns.
+
+When a user enters a query, the AI model analyzes the intent of the request, generates the appropriate SQL statement, and returns it to the application. The generated query is then validated for security before being executed on the SQLite database. Only safe and read-only operations are permitted, while potentially harmful commands such as DELETE, DROP, UPDATE, ALTER, and INSERT are blocked.
+
+In addition to SQL generation, AI is also used to provide a simple explanation of the generated query. This helps users understand how their natural language request has been translated into SQL and improves transparency within the system.
+
+The integration of AI significantly enhances usability by eliminating the need for users to learn SQL syntax. It allows students, beginners, and non-technical users to access and retrieve database information efficiently using natural language. This project demonstrates the practical application of Artificial Intelligence, Natural Language Processing (NLP), and Database Management Systems to create an intelligent and user-friendly database querying solution.
+
+---
+
+## Test Cases
+
+| Test Case ID | User Input                              | Expected Result                                  |
+| ------------ | --------------------------------------- | ------------------------------------------------ |
+| TC01         | Show all students                       | Display all student records from the database    |
+| TC02         | Show students older than 20             | Display students whose age is greater than 20    |
+| TC03         | Show MCA students                       | Display all students enrolled in MCA             |
+| TC04         | Show students with marks above 80       | Display students whose marks are greater than 80 |
+| TC05         | Count the total number of students      | Display the total student count                  |
+| TC06         | Show the student with the highest marks | Display the student having the highest marks     |
+| TC07         | What is the average marks of students?  | Display the average marks value                  |
+| TC08         | Delete all students                     | Block the query and display a security warning   |
+| TC09         | Drop the students table                 | Block the query and display a security warning   |
+| TC10         | Update all student marks to 100         | Block the query and display a security warning   |
+
+### Test Result
+
+All test cases were executed successfully. The system accurately converted natural language queries into SQL statements, retrieved the correct results from the SQLite database, and successfully blocked unsafe database operations.
+
 
 ## 💬 Example Questions
 
