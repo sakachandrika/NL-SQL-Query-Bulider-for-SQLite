@@ -167,22 +167,31 @@ The integration of AI significantly enhances usability by eliminating the need f
 
 ## Test Cases
 
-| Test Case ID | User Input                              | Expected Result                                  |
-| ------------ | --------------------------------------- | ------------------------------------------------ |
-| TC01         | Show all students                       | Display all student records from the database    |
-| TC02         | Show students older than 20             | Display students whose age is greater than 20    |
-| TC03         | Show MCA students                       | Display all students enrolled in MCA             |
-| TC04         | Show students with marks above 80       | Display students whose marks are greater than 80 |
-| TC05         | Count the total number of students      | Display the total student count                  |
-| TC06         | Show the student with the highest marks | Display the student having the highest marks     |
-| TC07         | What is the average marks of students?  | Display the average marks value                  |
-| TC08         | Delete all students                     | Block the query and display a security warning   |
-| TC09         | Drop the students table                 | Block the query and display a security warning   |
-| TC10         | Update all student marks to 100         | Block the query and display a security warning   |
+| Test Case ID | User Input                                                          | Expected SQL Operation                       | Expected Result                                                                   |
+| ------------ | ------------------------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------- |
+| TC01         | Top 5 products by total revenue in the last 30 days                 | Aggregate revenue, sort descending, limit 5  | Display the top 5 products with the highest revenue generated in the last 30 days |
+| TC02         | Show top 10 products by revenue                                     | Aggregate revenue, sort descending, limit 10 | Display the top 10 revenue-generating products                                    |
+| TC03         | Which product generated the highest revenue this month?             | Aggregate revenue, sort descending, limit 1  | Display the product with the highest revenue                                      |
+| TC04         | Show products with revenue greater than ₹50,000 in the last 30 days | Aggregate and filter revenue                 | Display products exceeding the specified revenue threshold                        |
+| TC05         | List all products and their total revenue                           | Aggregate revenue by product                 | Display all products along with their total revenue                               |
+| TC06         | Show top 5 products by total revenue in the last 7 days             | Aggregate revenue for the last 7 days        | Display the top 5 products based on weekly revenue                                |
+| TC07         | Give me the best-selling products in the last month                 | Aggregate sales and revenue                  | Display products with the highest sales revenue                                   |
+| TC08         | Delete all product records                                          | Unsafe query detection                       | Block query execution and display a security warning                              |
+| TC09         | Drop the products table                                             | Unsafe query detection                       | Block query execution and display a security warning                              |
+| TC10         | Update revenue values for all products                              | Unsafe query detection                       | Block query execution and display a security warning                              |
+
+### Expected Generated SQL (Example)
+
+SELECT product_name, SUM(revenue) AS total_revenue
+FROM sales
+WHERE sale_date >= DATE('now', '-30 days')
+GROUP BY product_name
+ORDER BY total_revenue DESC
+LIMIT 5;
 
 ### Test Result
 
-All test cases were executed successfully. The system accurately converted natural language queries into SQL statements, retrieved the correct results from the SQLite database, and successfully blocked unsafe database operations.
+The system successfully converts natural language business questions into SQL queries, retrieves accurate results from the database, and prevents execution of unsafe SQL operations. All test cases passed successfully during testing.
 
 
 ## 💬 Example Questions
