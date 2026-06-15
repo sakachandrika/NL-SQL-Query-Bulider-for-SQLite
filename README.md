@@ -1,5 +1,13 @@
 # 🔍 NL → SQL Query Builder
 **SQL-01 | AI Implementation Protocol — Student Project**
+## Team Members
+
+| S.No | Name | Branch | Roll Number | Email ID |
+|------|------|--------|------------|----------|
+| 1 | SAKA CHANDRIKA | MCA | 252T61F104 | sakachandrika2002@gmail.com |
+| 2 | HIBA | MCA | 252T61F100 | hiba.heera@gmail.com |
+| 3 | REDDY ARCHANA | MCA | 252T61F099 | archanareddy3579@gmail.com |
+
 
 Ask questions in plain English, get working SQL and live results back instantly.
 
@@ -77,19 +85,18 @@ The app auto-creates `sales.db` on first launch.
 | **Query history** | Per-session history with re-run capability |
 
 ---
-Architecture Overview:
-
-User
+## Architecture Overview:
+1.User
 The user enters a question in natural language.
-Streamlit UI
+2.Streamlit UI
 Streamlit provides the web interface where users interact with the system.
-AI Model (Gemini/Ollama)
+3.AI Model (Gemini/Ollama)
 The AI model understands the user's question and converts it into an SQL query.
-SQL Generation
+4.SQL Generation
 A valid SQL query is generated based on the database schema.
-SQLite Database
+5.SQLite Database
 The generated query is executed on the SQLite database to retrieve data.
-Pandas and Output Display
+6.Pandas and Output Display
 Pandas processes the query results and Streamlit displays the SQL query, retrieved data, and explanation to the user.
 
 ## 🛡️ Safety Architecture
