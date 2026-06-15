@@ -10,6 +10,8 @@ Ask questions in plain English, get working SQL and live results back instantly.
 | 3 | REDDY ARCHANA | MCA | 252T61F099 | archanareddy3579@gmail.com |
 
 ---
+NL to SQL Query Builder for SQLite is an AI-powered application that helps users interact with databases using simple English questions instead of writing SQL queries manually. The system converts natural language input into SQL queries, executes them on a SQLite database, and displays the results in an easy-to-understand format. It also provides the generated SQL query and a simple explanation to improve user understanding. Developed using Python, Streamlit, SQLite, Pandas, and AI technologies, the project makes database querying more accessible for non-technical users while ensuring accuracy, security, and ease of use.
+
 Demo video link : https://drive.google.com/file/d/1oG8d9hmKJGrYJdjvVz4KFRQkl9nHilae/view?usp=sharing
 
 ## 📦 Project Structure
